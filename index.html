@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleepio | Concept</title>
+    <style>
+        html { scroll-behavior: smooth; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        
+        body { 
+            background-color: #050505; 
+            color: #ffffff; 
+            line-height: 1.6;
+        }
+
+        /* Full-screen sections */
+        section { 
+            min-height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .purple-gradient {
+            background: linear-gradient(135deg, #7b2cbf, #3c096c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h1 { font-size: 5rem; font-weight: 900; margin-bottom: 10px; }
+        h2 { font-size: 2.5rem; margin-bottom: 20px; color: #9d4edd; }
+        
+        p { 
+            max-width: 700px; 
+            font-size: 1.2rem; 
+            color: #888; 
+            margin: 0 auto 30px; 
+        }
+
+        .scroll-indicator {
+            margin-top: 50px;
+            color: #5a189a;
+            font-weight: bold;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+        }
+
+        /* Description Cards */
+        .content-box {
+            max-width: 900px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: #111;
+            padding: 40px;
+            border-radius: 30px;
+            border: 1px solid #222;
+            transition: 0.4s;
+            text-align: left;
+        }
+
+        .card:hover {
+            border-color: #7b2cbf;
+            background: #161616;
+        }
+
+        .card h3 { color: #fff; margin-bottom: 15px; font-size: 1.5rem; }
+        .card p { font-size: 1rem; margin: 0; color: #666; }
+
+    </style>
+</head>
+<body>
+
+    <section id="hero">
+        <h1 class="purple-gradient">Sleepio</h1>
+        <p>The next generation of sleep engineering. Designed for those who value rest as much as performance.</p>
+        <a href="#about" class="scroll-indicator">Scroll to discover ↓</a>
+    </section>
+
+    <section id="about">
+        <h2>The Concept</h2>
+        <p>Sleepio isn't an app; it's a sleep ecosystem designed to automate your transition into deep rest.</p>
+        
+        <div class="content-box">
+            <div class="card">
+                <h3>Intelligent Limiter</h3>
+                <p>Unlike standard timers, Sleepio uses a biological fade-out algorithm. It doesn't just stop; it mimics the natural descent into sleep.</p>
+            </div>
+            <div class="card">
+                <h3>Neural Silence</h3>
+                <p>Once the threshold is reached, the system executes a total lock, ensuring no notifications or blue light disrupt your REM cycle.</p>
+            </div>
+            <div class="card">
+                <h3>Smart Reactivation</h3>
+                <p>The system prepares your environment for the morning, slowly re-engaging services only when your body is ready to wake.</p>
+            </div>
+            <div class="card">
+                <h3>Zero Friction</h3>
+                <p>One setting. Total automation. No menus, no ads, no distractions. Just the science of sleep.</p>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
+
